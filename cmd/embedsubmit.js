@@ -10,7 +10,7 @@ exports.run = (bot, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['esubmit'],
+  aliases: ['sembed'],
   permLevel: 2
 };
 
