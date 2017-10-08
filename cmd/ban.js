@@ -15,7 +15,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ['getridof'],
-  permLevel: 2
+  permLevel: 3
 };
 
 exports.help = {
