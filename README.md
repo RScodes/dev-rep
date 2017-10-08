@@ -1,6 +1,6 @@
 ![big background photo](http://i.imgur.com/jnISC8j.png)
 
-# eeb2Bot - Development Repository
+# EEB2Bot - Development Repository
 
 eeb2bot is a bot written in javascript using [discord.js](https://github.com/hydrabolt/discord.js "discord.js library"). It has mostly mod and admin commands but also a whole lot of normal commands. If you need help then talk to (his discord nickname in the server) Samuel Kenrick
 
