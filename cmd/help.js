@@ -10,8 +10,8 @@ const config = {
 exports.run = (bot, message, params) => {
     if (!params[0]) {
       message.channel.sendMessage("check your dms :rocket:").catch(console.error);
-      let modRole = message.guild.roles.find("name", "Staff");
-      let adminRole = message.guild.roles.find("name", "Owner");
+      let modRole = message.guild.roles.find("name", "MOD");
+      let adminRole = message.guild.roles.find("name", "ADMIN");
       var cmds = ``;
       cmds += `**Warning this is the dev rep so not all commands are fully functional** \n\n **My Normal Commands are:** \n
                 ${config.client.prefix}membercount \n
@@ -27,12 +27,12 @@ exports.run = (bot, message, params) => {
                 ${config.client.prefix}uptime \n
                 ${config.client.prefix}wiki \n
                 ${config.client.prefix}google \n
-                ${config.client.prefix}userinfo \n
-                ${config.client.prefix}githublinkmaker
+                ${config.client.prefix}userinfo
                 `;
       if (message.member.roles.has(modRole.id) || config.creator.Jimmy.includes(message.author.id)) {
           cmds += `\n\n **My Staff commands are** \n 
                 ${config.client.prefix}embed [what you want to embed] \n 
+                ${config.client.prefix}embedsubmit {the channel you want it to send the message to} [what you want to embed] \n 
                 ${config.client.prefix}addrole {user} [role] \n 
                 ${config.client.prefix}delrole {user} [role] \n 
                 ${config.client.prefix}announce [what you want to announce in #announcements] \n 
