@@ -1,7 +1,7 @@
 const moment = require('moment');
 exports.run = (bot, message) => {
   let noto = message.content.split(" ").slice(1).join(" ");
-	  bot.channels.get('260884357894373376').sendMessage("**:information_source: Announcement [" + moment().format("Do MMMM YYYY ") + "]**", {embed: {
+	  bot.channels.get('229995325656399872').sendMessage("**:information_source: Announcement [" + moment().format("Do MMMM YYYY ") + "]**", {embed: {
 			color: 0x00b7c6,
 			description: noto,
 			footer: {
