@@ -3,7 +3,7 @@ exports.run = (bot, message) => {
 		var year = date.getFullYear();
 		var month = date.getMonth() + 1;
 		var day  = date.getDate();
-		message.channel.sendMessage("it's the **`" + day + "/" + month + "/" + year + "`** where my hoster lives");
+		message.channel.sendMessage("it's the **`" + day + "/" + month + "/" + year + "`**");
 };
 
 exports.conf = {
@@ -15,6 +15,6 @@ exports.conf = {
 
 exports.help = {
   name : "date",
-  description: "shows tthe date in belgium",
+  description: "shows the date in belgium",
   usage: "date"
 };
